@@ -1,11 +1,28 @@
-// Default Fonts
+
+/***********************************************************************************
+ *                                 Default Theme Fonts
+ ***********************************************************************************/
+ 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Regular/Raleway-Regular.eot');
-    src: url('../fonts/Raleway-Regular/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-Regular/Raleway-Regular.woff2') format('woff2'),
-        url('../fonts/Raleway-Regular/Raleway-Regular.woff') format('woff'),
-        url('../fonts/Raleway-Regular/Raleway-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Proxima Nova Th';
+    src: url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.eot');
+    src: url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+        url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.woff2') format('woff2'),
+        url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.woff') format('woff'),
+        url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.ttf') format('truetype'),
+        url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.svg#ProximaNovaT-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/ProximaNova-Light/ProximaNova-Light.eot');
+    src: url('../fonts/ProximaNova-Light/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Light/ProximaNova-Light.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Light/ProximaNova-Light.woff') format('woff'),
+        url('../fonts/ProximaNova-Light/ProximaNova-Light.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Light/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+    font-weight: 300;
     font-style: normal;
 }

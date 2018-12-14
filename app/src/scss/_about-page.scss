@@ -1,0 +1,145 @@
+.main-wrapper {
+	position: relative;
+	padding: 0 60px 0 60px;
+	// display: none;
+	background: url(../img/overleyBg.png) no-repeat center;
+	background-size: cover;
+	z-index: 100;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0,0,0,.5);
+		z-index: -1;
+	}
+}
+
+.main-title {
+	color: $text-color;
+	border-bottom: 5px solid $pink;
+	display: inline-block;
+}
+
+.main-author-name {
+	color: $text-color;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.main-dot {
+	display: inline-block;
+	background-color: $pink;
+	min-width: 12px;
+	min-height: 12px;
+	border-radius: 100%;
+}
+
+.main-author-info {
+	color: $pink;
+	margin-top: 20px;
+}
+
+.main-author-content {
+	font-family: $thin;
+	color: darken($text-color, 25%);
+	font-size: 38px;
+	line-height: .5;
+	margin-top: 90px;
+	span {
+		color: #405ea5;
+	}
+}
+
+.main-btn {
+	margin-top: 60px;
+}
+
+.main-btn-work,
+.main-btn-contact {
+	background: linear-gradient(-217deg, lighten($dark-blue, 5%), $dark-blue 100%);
+	font-size: 20px;
+	// text-transform: uppercase;
+	color: darken(#f0f0f0, 10%);
+	border: none;
+	padding: 17px 35px;
+	cursor: pointer;
+	transition: all .5s ease-in;
+	&:hover {
+	
+	background: darken($pink, 30%);
+	}
+}
+
+.main-btn-work {
+	padding: 17px 45px;
+}
+
+.main-btn-contact {
+	margin-left: 40px;
+}
+
+.main-slider-wrapper {
+	position: relative;
+	max-width: 320px;
+	margin-top: 60px;
+	.next {
+		color: $pink;
+		position: absolute;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+		height: 100%;
+		width: 150px;
+		background: linear-gradient(90deg, transparent, #170416);
+		i {
+			line-height: 60px;
+			font-size: 60px;
+			opacity: .1;
+			position: absolute;
+			right: -50px;
+		}
+	}
+	.prev {
+		position: absolute;
+		color: $pink;
+		left: 0;
+		top: 0;
+		cursor: pointer;
+		height: 100%;
+		width: 150px;
+		background: linear-gradient(-90deg, transparent, #0B0516);
+		z-index: 40;
+		i {
+			line-height: 60px;
+			font-size: 60px;
+			opacity: .1;
+			position: absolute;
+			left: 0;
+		}
+	}
+}
+
+.prev,
+.next {
+	i{
+		&:hover {
+			opacity: .4;
+		}
+	}
+}
+
+.main-slider {
+	max-width: 320px;
+	position: relative;
+
+}
+
+.main-slider-item {
+	// color: darken($pink, 50%);
+	color: $pink;
+	opacity: .3;
+	font-size: 60px;
+}

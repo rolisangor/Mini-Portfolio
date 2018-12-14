@@ -282,9 +282,301 @@ template, [hidden] {
 /**
  * Add the correct display in IE 10.
  */
+/***********************************************************************************
+ *                                 Default Theme Fonts
+ ***********************************************************************************/
 @font-face {
-  font-family: 'Raleway';
-  src: url("../fonts/Raleway-Regular/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular/Raleway-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: 'Proxima Nova Th';
+  src: url(".//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.eot");
+  src: url(".//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url(".//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.woff2") format("woff2"), url(".//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.woff") format("woff"), url(".//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.ttf") format("truetype"), url(".//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.svg#ProximaNovaT-Thin") format("svg");
+  font-weight: 100;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url("../fonts/ProximaNova-Light/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light/ProximaNova-Light.ttf") format("truetype"), url("../fonts/ProximaNova-Light/ProximaNova-Light.svg#ProximaNova-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+/***********************************************************************************
+ *                                 Default Theme Color
+ ***********************************************************************************/
+/***********************************************************************************
+ *                                 Default Theme Fonts
+ ***********************************************************************************/
+body {
+  font-size: 16px;
+  font-family: "ProximaNova-Light", sans-serif;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  position: relative; }
+  body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  body:after {
+    content: "";
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  display: grid;
+  max-width: 1478px;
+  grid-template-columns: minmax(320px, 20%) 1fr;
+  margin: auto;
+  position: relative;
+  z-index: 20; }
+
+#avatar {
+  position: absolute;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1; }
+
+h1 {
+  font-size: 70px; }
+
+h2 {
+  font-size: 38px; }
+
+a {
+  text-decoration: none; }
+
+button {
+  outline: none; }
+
+.text-center {
+  text-align: center; }
+
+.footer-wrapper {
+  position: relative;
+  margin-top: 230px; }
+
+.copyright {
+  position: absolute;
+  color: #c5c4c9;
+  bottom: 60px; }
+  .copyright i {
+    color: #b1005b; }
+  .copyright a {
+    color: #b1005b; }
+  .copyright:before {
+    content: "";
+    position: absolute;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(3, 8, 22, 0.9)), color-stop(transparent), to(rgba(3, 8, 22, 0.9)));
+    background: linear-gradient(90deg, rgba(3, 8, 22, 0.9), transparent, rgba(3, 8, 22, 0.9));
+    right: -1px;
+    left: -1px;
+    top: -20px;
+    width: 101%;
+    height: 40px; }
+
+.header-wrapper {
+  position: relative;
+  background: url(../img/overleyBg.png) no-repeat center;
+  background-size: cover; }
+
+.header {
+  max-width: 320px;
+  z-index: 100; }
+
+.logo {
+  margin-bottom: 40px;
+  margin-top: 60px; }
+
+.nav-menu-item {
+  padding: 40px 40px;
+  font-size: 32px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+  .nav-menu-item a {
+    color: #c8c7cb; }
+  .nav-menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }
+
+.active a {
+  color: #ff4ba8; }
+
+.header-icon {
+  position: relative;
+  margin-top: 200px; }
+
+.header-icon-wrapp {
+  margin-bottom: 60px; }
+
+.header-icon-item {
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 30px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+  .header-icon-item a {
+    color: #353d51; }
+  .header-icon-item:hover {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+    .header-icon-item:hover a {
+      color: #ff4ba8; }
+
+.header-icon-item:nth-child(1) {
+  margin: 0; }
+
+/***********************************************************************************
+ *                                 Default Style Page
+ ***********************************************************************************/
+.main-wrapper {
+  position: relative;
+  padding: 0 60px 0 60px;
+  background: url(../img/overleyBg.png) no-repeat center;
+  background-size: cover;
+  z-index: 100; }
+  .main-wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
+
+.main-title {
+  color: #c8c7cb;
+  border-bottom: 5px solid #ff4ba8;
+  display: inline-block; }
+
+.main-author-name {
+  color: #c8c7cb;
+  display: inline-block;
+  margin-bottom: 0; }
+
+.main-dot {
+  display: inline-block;
+  background-color: #ff4ba8;
+  min-width: 12px;
+  min-height: 12px;
+  border-radius: 100%; }
+
+.main-author-info {
+  color: #ff4ba8;
+  margin-top: 20px; }
+
+.main-author-content {
+  font-family: "ProximaNovaT-Thin", sans-serif;
+  color: #87858e;
+  font-size: 38px;
+  line-height: .5;
+  margin-top: 90px; }
+  .main-author-content span {
+    color: #405ea5; }
+
+.main-btn {
+  margin-top: 60px; }
+
+.main-btn-work,
+.main-btn-contact {
+  background: linear-gradient(-217deg, #312947, #262037 100%);
+  font-size: 20px;
+  color: #d7d7d7;
+  border: none;
+  padding: 17px 35px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in; }
+  .main-btn-work:hover,
+  .main-btn-contact:hover {
+    background: #b1005b; }
+
+.main-btn-work {
+  padding: 17px 45px; }
+
+.main-btn-contact {
+  margin-left: 40px; }
+
+.main-slider-wrapper {
+  position: relative;
+  max-width: 320px;
+  margin-top: 60px; }
+  .main-slider-wrapper .next {
+    color: #ff4ba8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 150px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), to(#170416));
+    background: linear-gradient(90deg, transparent, #170416); }
+    .main-slider-wrapper .next i {
+      line-height: 60px;
+      font-size: 60px;
+      opacity: .1;
+      position: absolute;
+      right: -50px; }
+  .main-slider-wrapper .prev {
+    position: absolute;
+    color: #ff4ba8;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 150px;
+    background: -webkit-gradient(linear, right top, left top, from(transparent), to(#0B0516));
+    background: linear-gradient(-90deg, transparent, #0B0516);
+    z-index: 40; }
+    .main-slider-wrapper .prev i {
+      line-height: 60px;
+      font-size: 60px;
+      opacity: .1;
+      position: absolute;
+      left: 0; }
+
+.prev i:hover,
+.next i:hover {
+  opacity: .4; }
+
+.main-slider {
+  max-width: 320px;
+  position: relative; }
+
+.main-slider-item {
+  color: #ff4ba8;
+  opacity: .3;
+  font-size: 60px; }
+
+/***********************************************************************************
+ *                                 Media Style
+ ***********************************************************************************/
+/*************************************************************
+ *      Large devices (desktops, less than 1200px)          LG       
+ *************************************************************/
+/*************************************************************
+ *      Medium devices (tablets, less than 992px)           MD
+ *************************************************************/
+/*************************************************************
+ *      Small devices ( phones, less than 768px)            SM
+ *************************************************************/
+/*************************************************************
+ *      Extra small devices ( phones, less than 576px)      XS
+ *************************************************************/
