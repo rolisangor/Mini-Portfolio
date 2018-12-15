@@ -57,8 +57,8 @@
  *************************************************************/
 @media (max-width: 767.98px) {
 	.main-wrapper {
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 18px;
+		padding-right: 18px;
 	}
 
 	.main-author-content {
@@ -95,12 +95,12 @@
 		// display: none;
 		 background: url(../img/overleyBg.png) no-repeat center;
 		background-size: cover;
-		min-height: 100%;
+		// min-height: 100%;
 	}
 
 	.logo {
-		margin-bottom: 5%;
-		margin-top: 7%;
+		margin-bottom: 20px;
+		margin-top: 40px;
 	}
 
 	.nav-menu-item {
@@ -108,15 +108,19 @@
 	}
 
 	.header-icon-wrapp {
-		margin-bottom: 10%;
+		// margin-bottom: 10%;
+	}
+	
+	.main-author-name {
+		font-size: 60px;
 	}
 
 	.main-author-content {
-  	font-size: 20px;
+  	font-size: 18px;
   }
 
    .copyright {
-  	font-size: 15px;
+  	font-size: 11px;
   }
 
   .main-btn {
@@ -125,15 +129,42 @@
 
   .main-btn-work,
   .main-btn-contact {
-  	padding: 15px 23px;
+  	padding: 10px 10px;
   	display: inline-block;
   }
 
   .main-btn-work {
-  	padding: 15px 33px;
+  	padding: 10px 15px;
   }
 
   .main-btn-contact {
   	margin-left: 20px;
+  }
+
+  .contact-form {
+  	.input-wrapper {
+  		grid-template-columns: 1fr;
+  	}
+
+		.btn-wrapper {
+			grid-template-columns: 1fr;
+		}
+
+	  .contact-social {
+	  	margin-top: 40px;
+	  }
+
+	  .contact-icon {
+	  	font-size: 30px;
+	  }
+
+	  #contact-text::placeholder {
+	  	font-size: 30px;
+	  }
+
+	  #contact-name::placeholder,
+	  #contact-email::placeholder {
+	  	font-size: 25px;
+	  }
   }
 }

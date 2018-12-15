@@ -335,9 +335,6 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 10; }
 
-html {
-  background-color: #0E0616; }
-
 ul {
   list-style: none;
   margin: 0;
@@ -362,7 +359,8 @@ h1 {
   font-size: 70px; }
 
 h2 {
-  font-size: 38px; }
+  font-size: 38px;
+  font-family: "Proxima Nova Th", sans-serif; }
 
 a {
   text-decoration: none; }
@@ -456,6 +454,8 @@ button {
   z-index: 100; }
   .main-wrapper:before {
     content: "";
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     right: 0;
@@ -568,6 +568,17 @@ button {
   opacity: .3;
   font-size: 60px; }
 
+.work-portfolio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px; }
+
+.work-portfolio-item img {
+  max-width: 100%; }
+
+.item-title {
+  color: #c8c7cb; }
+
 .contact-form {
   margin-top: 50px; }
   .contact-form label {
@@ -589,7 +600,7 @@ button {
     box-sizing: border-box;
     color: #c8c7cb;
     font-size: 19px;
-    padding: 15px 20px;
+    padding: 15px 15px;
     border: 1px solid #403a4d;
     background-color: rgba(25, 20, 44, 0.4);
     min-height: 75px; }
@@ -651,7 +662,7 @@ button {
     color: #c8c7cb;
     background-color: #ff188f;
     border: none;
-    padding: 23px 40px;
+    padding: 23px 30px;
     opacity: .8; }
     .contact-form #submit-btn:hover {
       background-color: #cb0069; }
@@ -813,8 +824,8 @@ button {
  *************************************************************/
 @media (max-width: 767.98px) {
   .main-wrapper {
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding-left: 18px;
+    padding-right: 18px; }
   .main-author-content {
     font-size: 30px; }
   .main-slider-wrapper {
@@ -833,26 +844,53 @@ button {
   .header-wrapper {
     position: relative;
     background: url(../img/overleyBg.png) no-repeat center;
-    background-size: cover;
-    min-height: 100%; }
+    background-size: cover; }
   .logo {
-    margin-bottom: 5%;
-    margin-top: 7%; }
+    margin-bottom: 20px;
+    margin-top: 40px; }
   .nav-menu-item {
     padding: 30px 30px; }
-  .header-icon-wrapp {
-    margin-bottom: 10%; }
+  .main-author-name {
+    font-size: 60px; }
   .main-author-content {
-    font-size: 20px; }
+    font-size: 18px; }
   .copyright {
-    font-size: 15px; }
+    font-size: 11px; }
   .main-btn {
     text-align: center; }
   .main-btn-work,
   .main-btn-contact {
-    padding: 15px 23px;
+    padding: 10px 10px;
     display: inline-block; }
   .main-btn-work {
-    padding: 15px 33px; }
+    padding: 10px 15px; }
   .main-btn-contact {
-    margin-left: 20px; } }
+    margin-left: 20px; }
+  .contact-form .input-wrapper {
+    grid-template-columns: 1fr; }
+  .contact-form .btn-wrapper {
+    grid-template-columns: 1fr; }
+  .contact-form .contact-social {
+    margin-top: 40px; }
+  .contact-form .contact-icon {
+    font-size: 30px; }
+  .contact-form #contact-text::-webkit-input-placeholder {
+    font-size: 30px; }
+  .contact-form #contact-text:-ms-input-placeholder {
+    font-size: 30px; }
+  .contact-form #contact-text::-ms-input-placeholder {
+    font-size: 30px; }
+  .contact-form #contact-text::placeholder {
+    font-size: 30px; }
+  .contact-form #contact-name::-webkit-input-placeholder,
+  .contact-form #contact-email::-webkit-input-placeholder {
+    font-size: 25px; }
+  .contact-form #contact-name:-ms-input-placeholder,
+  .contact-form #contact-email:-ms-input-placeholder {
+    font-size: 25px; }
+  .contact-form #contact-name::-ms-input-placeholder,
+  .contact-form #contact-email::-ms-input-placeholder {
+    font-size: 25px; }
+  .contact-form #contact-name::placeholder,
+  .contact-form #contact-email::placeholder {
+    font-size: 25px; } }

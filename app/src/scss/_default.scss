@@ -28,9 +28,7 @@ body {
 		z-index: 10;
 	}
 }
-html {
-	background-color: #0E0616;
-}
+
 ul {
 	list-style: none;
 	margin: 0;
@@ -61,6 +59,7 @@ h1 {
 
 h2 {
 	font-size: 38px;
+	font-family: $thin;
 }
 
 a {

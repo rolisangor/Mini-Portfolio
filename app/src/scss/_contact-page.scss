@@ -24,7 +24,7 @@
 		box-sizing: border-box;
 		color: $text-color;
 		font-size: 19px;
-		padding: 15px 20px;
+		padding: 15px 15px;
 		border: 1px solid #403a4d;
 		background-color: rgba(25, 20, 44, .4);
 		min-height: 75px;
@@ -61,7 +61,7 @@
 		color: $text-color;
 		background-color: darken($pink, 10%);
 		border: none;
-		padding: 23px 40px;
+		padding: 23px 30px;
 		opacity: .8;
 		&:hover {
 			background-color: darken($pink, 25%);

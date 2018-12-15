@@ -1,0 +1,22 @@
+.work-portfolio-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px;
+}
+
+.work-image-wrapper {
+	
+}
+
+.work-portfolio-item {
+	
+
+	
+	img {
+		max-width: 100%;
+	}
+}
+
+.item-title {
+	color: $text-color;
+}

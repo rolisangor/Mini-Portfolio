@@ -6,6 +6,7 @@
 	z-index: 100;
 	&:before {
 		content: "";
+		box-sizing: border-box;
 		position: absolute;
 		top: 0;
 		right: 0;
