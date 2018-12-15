@@ -2,22 +2,138 @@
 /*************************************************************
  *      Large devices (desktops, less than 1200px)          LG       
  *************************************************************/
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+	body {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.main-author-content {
+  	font-size: 35px;
+  }
+
+  .prev,
+  .next {
+  	display: none;
+  }
+}
 
 
 /*************************************************************
  *      Medium devices (tablets, less than 992px)           MD
  *************************************************************/
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+	.header-wrapper {
+		display: none;
+	}
+
+	.main-wrapper {
+		// display: none;
+	}
+
+	.container {
+	// grid-template-columns: minmax(100%,100%);
+	grid-template-columns: 1fr;
+  }
+	
+	.header-icon {
+		margin-top: 100px;
+	}
+
+  .header-icon-item {
+  	margin-left: 30px;
+  	// letter-spacing: 30px;
+  }
+
+  .main-menu-btn {
+  	display: flex;
+  }
+
+}
 
 
 /*************************************************************
  *      Small devices ( phones, less than 768px)            SM
  *************************************************************/
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+	.main-wrapper {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.main-author-content {
+  	font-size: 30px;
+  }
+
+  .main-slider-wrapper {
+  	// display: flex;
+		// text-align: center;
+		// margin: 0;
+		min-width: 100%;
+		margin-top: 100px;
+		// margin-top: 70px;
+  }
+
+  .main-slider {
+  	min-width: 100%;
+  }
+
+  .footer-wrapper {
+  	margin-top: 150px;
+  	text-align: center;
+  }
+
+}
 
 
 /*************************************************************
  *      Extra small devices ( phones, less than 576px)      XS
  *************************************************************/
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+	.header-wrapper {
+		position: relative;
+		// display: none;
+		 background: url(../img/overleyBg.png) no-repeat center;
+		background-size: cover;
+		min-height: 100%;
+	}
+
+	.logo {
+		margin-bottom: 5%;
+		margin-top: 7%;
+	}
+
+	.nav-menu-item {
+		padding: 30px 30px;
+	}
+
+	.header-icon-wrapp {
+		margin-bottom: 10%;
+	}
+
+	.main-author-content {
+  	font-size: 20px;
+  }
+
+   .copyright {
+  	font-size: 15px;
+  }
+
+  .main-btn {
+  	text-align: center;
+  }
+
+  .main-btn-work,
+  .main-btn-contact {
+  	padding: 15px 23px;
+  	display: inline-block;
+  }
+
+  .main-btn-work {
+  	padding: 15px 33px;
+  }
+
+  .main-btn-contact {
+  	margin-left: 20px;
+  }
+}

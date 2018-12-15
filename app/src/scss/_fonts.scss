@@ -3,14 +3,25 @@
  *                                 Default Theme Fonts
  ***********************************************************************************/
  
+// @font-face {
+//     font-family: 'Proxima Nova Th';
+//     src: url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.eot');
+//     src: url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+//         url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.woff2') format('woff2'),
+//         url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.woff') format('woff'),
+//         url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.ttf') format('truetype'),
+//         url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.svg#ProximaNovaT-Thin') format('svg');
+//     font-weight: 100;
+//     font-style: normal;
+// }
+
 @font-face {
     font-family: 'Proxima Nova Th';
-    src: url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.eot');
-    src: url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
-        url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.woff2') format('woff2'),
-        url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.woff') format('woff'),
-        url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.ttf') format('truetype'),
-        url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.svg#ProximaNovaT-Thin') format('svg');
+    src: url('../fonts/ProximaNovaT-Thin/ProximaNova-Thin.eot');
+    src: url('../fonts/ProximaNovaT-Thin/ProximaNova-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNovaT-Thin/ProximaNova-Thin.woff2') format('woff2'),
+        url('../fonts/ProximaNovaT-Thin/ProximaNova-Thin.woff') format('woff'),
+        url('../fonts/ProximaNovaT-Thin/ProximaNova-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }

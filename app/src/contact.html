@@ -30,7 +30,7 @@
 						</div>
 				
 						<ul class="nav-menu">
-							<li class="nav-menu-item active"><a href="./index.html">About</a></li>
+							<li class="nav-menu-item active"><a href="#">About</a></li>
 							<li class="nav-menu-item"><a href="#">Work</a></li>
 							<li class="nav-menu-item"><a href="#">Labs</a></li>
 							<li class="nav-menu-item"><a href="contact.html">Contact</a></li>
@@ -56,56 +56,50 @@
 			<div class="main-wrapper">
 				
 				<div class="main-menu-btn">
-					
+					<div class="main-menu-item">
 						<span></span>
 						<span></span>
 						<span></span>
-					
+					</div>
 				</div>
 
 				<main class="main">
+					<h2 class="main-title contact-title">Contact</h2>
 
-					<img id="avatar" src="img/avatar.png" alt="avatar">
-				<h2 class="main-title">About</h2>
-				<div class="main-content">
-					
-					<h1 class="main-author-name">Hi I'm Vitaly<div class="main-dot"></div></h1>
+					<form class="contact-form" action="#" method="POST">
 
-					<h2 class="main-author-info">Freelance Web Developer</h2>
+						<label for="contaact-text">Project description</label>
+						<textarea name="contact-text" id="contact-text" rows="11" placeholder="Project Type, Timeline, estimate etc."></textarea>
 
-					<div class="main-author-content">
-						<p>Currently curating designs for new</p>
-						<p>startups and founders. Also love</p>
-						<p>to code in <span>Laravel</span> and <span>Ruby</span></p>
-					</div>
-
-					<div class="main-btn">
-						<button class="main-btn-work">My Work</button>
-						<button class="main-btn-contact">Know More</button>
-					</div>
-					<div class="main-slider-wrapper">
-						<div class="prev"><i class="fal fa-angle-left"></i></div>
-						<div class="main-slider">
-
-							<div class="main-slider-item"><i class="fab fa-gulp"></i></div>
-							<div class="main-slider-item"><i class="fab fa-wordpress"></i></div>
-							<div class="main-slider-item"><i class="fab fa-php"></i></div>
-							<div class="main-slider-item"><i class="fab fa-angular"></i></div>
-							<div class="main-slider-item"><i class="fab fa-react"></i></div>
-							<div class="main-slider-item"><i class="fab fa-js-square"></i></div>
-							<div class="main-slider-item"><i class="fab fa-less"></i></div>
-							<div class="main-slider-item"><i class="fab fa-node"></i></div>
-							<div class="main-slider-item"><i class="fab fa-css3-alt"></i></div>
-							<div class="main-slider-item"><i class="fab fa-sass"></i></div>
-
+						
+							<label class="contact-name" for="contact-name">About You</label>
+							<div class="input-wrapper">
+							<input type="text" name="contact-name" id="contact-name" placeholder="Name">
+							
+							<input type="email" name="contact-email" id="contact-email" placeholder="Email Address"> <br>
 						</div>
-						<div class="next"><i class="fal fa-angle-right"></i></div>
-					</div>
-				</div>
+
+						<div class="btn-wrapper">
+							<input type="submit" value="Request a Quote" id="submit-btn">
+
+							<div class="contact-social">
+
+								<ul class="header-icon-wrapp contact-icon-wrapp">
+									<li class="header-icon-item contact-icon"><a href="https://www.messenger.com/t/silivitalii"><i class="fab fa-facebook-messenger"></i></a></li>
+									<li class="header-icon-item contact-icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li class="header-icon-item contact-icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li class="header-icon-item contact-icon"><a href="#"><i class="fab fa-github"></i></a></li>
+
+							  </ul>
+							</div>
+						</div>
+
+					</form>
+					
 			 </main>
-			 <div class="footer-wrapper">
+			 <div class="footer-wrapper footer-contact-wrapper">
 				<footer>
-					<div class="copyright"><i class="far fa-copyright"></i> 2018 <a href="https://web-portfolium.net/">web-portfolium.net</a> All rights reserved</div>
+					<div class="copyright contact-copyright"><i class="far fa-copyright"></i> 2018 <a href="https://web-portfolium.net/">web-portfolium.net</a> All rights reserved</div>
 				</footer>
 			</div>
 		</div>

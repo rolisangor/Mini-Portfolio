@@ -1,0 +1,60 @@
+.main-menu-btn {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	position: absolute;
+	right: 25px;
+	top: 20px;
+	cursor: pointer;
+	width: 70px;
+	height: 70px;
+	display: none;
+	
+	span {
+		position: relative;
+		display: block;
+		width: 35px;
+		height: 5px;
+		background-color: $pink;
+		margin-top: 7px;
+		border-radius: 4px;
+		transition: all .5s ease;
+	}
+	span:nth-child(1) {
+		margin-top: 0;
+	}
+}
+
+.main-menu-btn:hover {
+	border: 5px solid transparent;
+	border-radius: 100%;
+	animation: circle .2s forwards;
+
+	span {
+		margin-top: 0;
+	}
+	span:nth-child(1) {
+		transform: rotate(-20deg);
+		width: 25px;
+	}
+	span:nth-child(3) {
+		transform: rotate(20deg);
+		width: 25px;
+	}
+}
+
+@keyframes circle {
+	from { border-color:$pink transparent transparent transparent; }
+	  10%{border-color: $pink transparent transparent transparent; }
+	  20%{border-color: $pink transparent transparent transparent; }
+		30%{border-color: $pink $pink transparent transparent; }
+		40%{border-color: $pink $pink transparent transparent; }
+		50%{border-color: $pink $pink transparent transparent; }
+		60%{border-color: $pink $pink $pink transparent; }
+		70%{border-color: $pink $pink $pink transparent; }
+		80%{border-color: $pink $pink $pink transparent; }
+		90%{border-color: $pink $pink $pink $pink; }
+	to {  border-color: $pink $pink $pink $pink;  }
+}

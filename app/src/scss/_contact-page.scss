@@ -1,0 +1,103 @@
+.contact-form {
+	margin-top: 50px;
+	label {
+		display: block;
+		font-family: $thin;
+		color: $text-color;
+		font-size: 36px;
+		font-weight: 100;
+		margin-bottom: 25px;
+	}
+
+	.contact-name {
+		margin-top: 40px;
+	}
+		
+	.input-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 40px;
+	}	
+
+	#contact-name,
+	#contact-email {
+		box-sizing: border-box;
+		color: $text-color;
+		font-size: 19px;
+		padding: 15px 20px;
+		border: 1px solid #403a4d;
+		background-color: rgba(25, 20, 44, .4);
+		min-height: 75px;
+		// width: 50%;
+	}
+
+	#contact-name::placeholder,
+	#contact-email::placeholder {
+		color: darken($text-color, 50%);
+		font-family: $thin;
+		font-size: 30px;
+		font-weight: 600;
+		opacity: .7;
+	}
+
+	#contact-text {
+		min-width: 100%;
+		box-sizing: border-box;
+		color: $text-color;
+		font-size: 19px;
+		padding: 15px 20px;
+		border: 1px solid #403a4d;
+		background-color: rgba(25, 20, 44, .4)
+	}
+
+	#contact-text::placeholder {
+		color: darken($text-color, 60%);
+		font-size: 50px;
+		font-family: $thin;
+	}
+
+	#submit-btn {
+		font-size: 25px;
+		color: $text-color;
+		background-color: darken($pink, 10%);
+		border: none;
+		padding: 23px 40px;
+		opacity: .8;
+		&:hover {
+			background-color: darken($pink, 25%);
+		}
+	}
+
+	.btn-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 40px;
+	}
+
+	.contact-social {
+		position: relative;
+		text-align: center;
+		align-self: center;
+	}
+
+	.contact-icon-wrapp {
+		position: relative;
+		margin-bottom: 0;
+	}
+
+	.contact-icon {
+		font-size: 50px;
+	}
+}
+
+.footer-contact-wrapper {
+	text-align: center;
+}
+
+#contact-text,
+#contact-name,
+#contact-email {
+	&:focus {
+		border: 1px solid $dark-blue;
+	}
+}

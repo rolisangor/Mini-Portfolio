@@ -6,6 +6,13 @@ $(document).ready(function(){
         centerPadding: '60px',
         slidesToShow: 2,
         responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            arrows: false
+          }
+        },
           {
             breakpoint: 768,
             settings: {
@@ -21,9 +28,14 @@ $(document).ready(function(){
               arrows: false,
               centerMode: true,
               centerPadding: '40px',
-              slidesToShow: 1
+              slidesToShow: 2
             }
           }
         ]
+      });
+
+      $('.main-menu-btn').on('click', function() {
+        $('.main-wrapper').slideUp('slow');
+        $('.header-wrapper').slideDown('slow');
       });
     });
