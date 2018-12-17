@@ -1,4 +1,15 @@
+/*************************************************************
+ *      Very large device 1200px plus -->                   XL
+ *************************************************************/
+@media ( max-width: 1300px) {
+	.work-portfolio-wrapper {
+		grid-gap: 30px;
+	}
 
+	.work-portfolio-item {
+		height: 180px;
+	}
+}
 /*************************************************************
  *      Large devices (desktops, less than 1200px)          LG       
  *************************************************************/
@@ -6,6 +17,11 @@
 	body {
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+	
+	.main-wrapper {
+		padding-left: 35px;
+		padding-right: 35px;
 	}
 
 	.main-author-content {
@@ -15,6 +31,14 @@
   .prev,
   .next {
   	display: none;
+  }
+
+  .work-portfolio-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-portfolio-item {
+	  height: 220px;
   }
 }
 
@@ -28,11 +52,11 @@
 	}
 
 	.main-wrapper {
-		// display: none;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	.container {
-	// grid-template-columns: minmax(100%,100%);
 	grid-template-columns: 1fr;
   }
 	
@@ -47,6 +71,14 @@
 
   .main-menu-btn {
   	display: flex;
+  }
+
+  .work-portfolio-wrapper {
+		grid-template-columns: repeat(3, 1fr);
+  }
+
+  .work-portfolio-item {
+	  height: 170px;
   }
 
 }
@@ -83,6 +115,14 @@
   	text-align: center;
   }
 
+  .work-portfolio-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-portfolio-item {
+	  height: 200px;
+  }
+
 }
 
 
@@ -92,10 +132,8 @@
 @media (max-width: 575.98px) {
 	.header-wrapper {
 		position: relative;
-		// display: none;
-		 background: url(../img/overleyBg.png) no-repeat center;
+		background: url(../img/overleyBg.png) no-repeat center;
 		background-size: cover;
-		// min-height: 100%;
 	}
 
 	.logo {
@@ -107,10 +145,6 @@
 		padding: 30px 30px;
 	}
 
-	.header-icon-wrapp {
-		// margin-bottom: 10%;
-	}
-	
 	.main-author-name {
 		font-size: 60px;
 	}
@@ -167,4 +201,24 @@
 	  	font-size: 25px;
 	  }
   }
+
+  .work-portfolio-wrapper {
+		grid-template-columns: repeat(1, 1fr);
+		margin-top: 30px;
+  }
+
+  .work-portfolio-item {
+	  height: 270px;
+  }
+
+  .labs-content {
+  	font-size: 80px;
+  }
+
+  .labs-line {
+  	position: relative;
+  	height: 1px;
+  	margin-top: 100px;
+  }
+
 }

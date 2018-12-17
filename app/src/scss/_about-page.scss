@@ -61,16 +61,17 @@
 .main-btn-contact {
 	background: linear-gradient(-217deg, lighten($dark-blue, 5%), $dark-blue 100%);
 	font-size: 20px;
-	// text-transform: uppercase;
 	color: darken(#f0f0f0, 10%);
 	border: none;
 	padding: 17px 35px;
 	cursor: pointer;
 	transition: all .5s ease-in;
 	&:hover {
-	
 	background: darken($pink, 30%);
 	}
+	// a {
+	// color: darken(#f0f0f0, 10%);		
+	// }
 }
 
 .main-btn-work {
@@ -138,9 +139,7 @@
 }
 
 .main-slider-item {
-	// color: darken($pink, 50%);
 	color: $pink;
 	opacity: .3;
 	font-size: 60px;
 }
-

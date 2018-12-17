@@ -2,19 +2,6 @@
 /***********************************************************************************
  *                                 Default Theme Fonts
  ***********************************************************************************/
- 
-// @font-face {
-//     font-family: 'Proxima Nova Th';
-//     src: url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.eot');
-//     src: url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
-//         url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.woff2') format('woff2'),
-//         url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.woff') format('woff'),
-//         url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.ttf') format('truetype'),
-//         url('.//fonts/ProximaNovaT-Thin/ProximaNovaT-Thin.svg#ProximaNovaT-Thin') format('svg');
-//     font-weight: 100;
-//     font-style: normal;
-// }
-
 @font-face {
     font-family: 'Proxima Nova Th';
     src: url('../fonts/ProximaNovaT-Thin/ProximaNova-Thin.eot');
@@ -37,3 +24,15 @@
     font-weight: 300;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Behrens KursivC';
+    src: url('../fonts/BehrensKursivC/BehrensKursivC.eot');
+    src: url('../fonts/BehrensKursivC/BehrensKursivC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BehrensKursivC/BehrensKursivC.woff2') format('woff2'),
+        url('../fonts/BehrensKursivC/BehrensKursivC.woff') format('woff'),
+        url('../fonts/BehrensKursivC/BehrensKursivC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
